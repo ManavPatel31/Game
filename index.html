@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+     <!-- Latest compiled and minified CSS -->
+<!-- Latest compiled and minified CSS -->
+       <meta charset="utf-8">
+        <title>ASSIGNMENT 5</title>
+        <style>
+            #scoreButton, #speedButton {
+                background-color: #2040a0; 
+                color: #f3f3f3; 
+                border: 2px solid #3f3f3f;
+                width: 100px;
+                height: 40px;
+                font-weight:bolder;
+                margin: 5px 5px 5px 5px;
+            }
+            #scoreButton:hover, #speedButton:hover {
+                background-color: #3f3f3f; 
+                color: #f3f3f3; 
+                border: 2px solid #2040a0;
+                width: 100px;
+                height: 40px;
+                font-weight:bolder;
+            }
+
+            body{
+	background-color:#FFCC66;
+}
+            
+            #score {
+                font-size: 20px;
+                color: blue;
+            }
+            #title {
+                font-size: 30px;
+                color: blue;
+            }		canvas{
+	min-width: 500px;
+	vertical-align: middle;
+	text-align:center;
+	}
+	#tblInformation{
+	width: 90%;
+border: 1px #3f3f3f solid;
+margin: 10px 0px 0px 10px;
+background: #fff;
+border-radius: 10px;
+	background-color:#FFFF66;
+
+}
+	#tblInformation td{
+padding: 1px 0px 10px 0px;
+}
+canvas{
+	margin-top: 10px;
+	border: 2px #3f3f3f solid;
+border-radius: 10px;
+}
+table tr{
+	border:1px #3f3f3f solid;
+}
+        </style>
+    </head>
+    <body>
+        <table id="tblInformation">
+            <tr>
+                <td style="text-align:center">
+                    <div id = "score"></div>
+                    <div id = "title" class="auto-style1">BugSmasher BY <i>MANAV PATEL</i> (301147682)</div>
+                </td>
+                <td style="text-align:center">
+                    <button id = "scoreButton"  onclick = "resetScore()" class="auto-style2">Reset Score</button>
+                    <button id = "speedButton" onclick = "resetSpeed()" class="auto-style2">Reset Speed</button>
+                </td>
+            </tr>
+            <tr>
+            <td colspan="2">
+            <div id = "theCanvas"></div></td>
+                        </tr>
+        </table>
+            
+		<p class="auto-style11" style="text-align:left">&copy; Manav Patel&#8212; Student ID: 301147682&#8212;Course: Web Interface Design&#8212; Semester:2 
+		</p>
+        <script src="game.js"></script>
+    </body>
+</html>
